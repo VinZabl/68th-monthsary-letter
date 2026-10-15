@@ -1,0 +1,178 @@
+/* ============================================================
+   QuestionSummary.module.css
+   ============================================================ */
+
+.summarySection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+  padding: clamp(1.5rem, 5vw, 3rem) clamp(1rem, 5vw, 2rem);
+  gap: clamp(1rem, 3vw, 1.6rem);
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tulipRow {
+  display: flex;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.headerBlock {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.promptNotice {
+  font-family: var(--ff-heading);
+  font-size: clamp(1.05rem, 3.8vw, 1.35rem);
+  font-weight: 600;
+  color: var(--clr-burgundy);
+  background: linear-gradient(135deg, rgba(240, 196, 196, 0.45) 0%, rgba(254, 249, 245, 0.9) 100%);
+  padding: 0.5rem 1.2rem;
+  border-radius: var(--r-full);
+  border: 1.5px dashed var(--clr-burgundy-mid);
+  display: inline-block;
+  margin: 0 auto;
+  box-shadow: 0 4px 14px rgba(139, 50, 82, 0.12);
+}
+
+.title {
+  font-family: var(--ff-script);
+  font-size: clamp(1.4rem, 4.8vw, 1.9rem);
+  color: var(--clr-burgundy-mid);
+  margin: 0;
+}
+
+/* ── Summary Card ──────────────────────────────────────────── */
+.summaryCard {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: clamp(1.2rem, 4vw, 1.8rem);
+  box-shadow:
+    0 12px 36px rgba(139, 50, 82, 0.12),
+    0 2px 6px rgba(0, 0, 0, 0.04);
+  border: 1.5px solid rgba(240, 196, 196, 0.6);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-ui);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-text-muted);
+  border-bottom: 1px solid rgba(240, 196, 196, 0.4);
+  padding-bottom: 0.6rem;
+}
+
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.summaryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  text-align: left;
+}
+
+.qHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.qNum {
+  font-family: var(--ff-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--clr-white);
+  background: var(--clr-burgundy-mid);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.questionText {
+  font-family: var(--ff-body);
+  font-size: clamp(0.85rem, 2.9vw, 0.95rem);
+  color: var(--clr-text);
+  font-weight: 500;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.answerBox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--clr-cream);
+  padding: 0.55rem 0.9rem;
+  border-radius: 8px;
+  border-left: 3px solid var(--clr-burgundy);
+}
+
+.checkIcon {
+  color: var(--clr-burgundy);
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.answerText {
+  font-family: var(--ff-body);
+  font-size: clamp(0.85rem, 2.9vw, 0.95rem);
+  color: var(--clr-burgundy);
+  font-style: italic;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cardFooter {
+  border-top: 1px dashed rgba(240, 196, 196, 0.5);
+  padding-top: 0.6rem;
+  text-align: center;
+}
+
+.footerNote {
+  font-family: var(--ff-script);
+  font-size: 1.05rem;
+  color: var(--clr-rose);
+}
+
+/* ── Continue Button ───────────────────────────────────────── */
+.actionBlock {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.continueBtn {
+  padding: 0.7rem 1.8rem;
+  background: linear-gradient(135deg, var(--clr-burgundy) 0%, var(--clr-burgundy-mid) 100%);
+  color: var(--clr-white);
+  font-family: var(--ff-heading);
+  font-size: 1.05rem;
+  font-weight: 500;
+  border-radius: var(--r-full);
+  box-shadow: var(--shadow-sm);
+  letter-spacing: 0.03em;
+  transition: all 0.25s ease;
+  min-height: 44px;
+  cursor: pointer;
+}
